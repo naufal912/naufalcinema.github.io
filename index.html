@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofers Cinema</title>
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- daftar film -->
+   
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 position-fixed ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  active px-3" aria-current="page"
+                                href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  px-3" href="#partners">partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  px-3" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  px-3" href="#projects">details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  px-3" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  px-3" href="#cta">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-uppercase  dropdown-toggle text-center" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">GENRE</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html" class="dropdown-item text-uppercase ">ACTIONS <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="blog.html" class="dropdown-item text-uppercase ">ADVENTURE <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="blog-single.html" class="dropdown-item text-uppercase ">ANIMATIONS <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="booking.html" class="dropdown-item text-uppercase ">Drama <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="services.html" class="dropdown-item text-uppercase ">Romantis <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="services-single.html" class="dropdown-item text-uppercase ">Komedi
+                                        <span class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="project.html" class="dropdown-item text-uppercase ">Dokumenter <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="project-single.html" class="dropdown-item text-uppercase ">Horor
+                                        <span class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="pricing.html" class="dropdown-item text-uppercase ">Thriller <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="contact.html" class="dropdown-item text-uppercase ">Contact <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="team.html" class="dropdown-item text-uppercase ">Our Team <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="review.html" class="dropdown-item text-uppercase ">Reviews <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                                <li><a href="faq.html" class="dropdown-item text-uppercase ">FAQs <span
+                                            class="badge bg-secondary">Pro</span></a></li>
+                            </ul>
+                        </li>
+                       
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="position-relative overflow-hidden py-4" style="background: url(image/erik-mclean-8SeJUmfahu0-unsplash.jpg);">
+        <!-- <div class="pattern-overlay pattern-right position-absolute">
+            <img src="images/pattern-hero.png" alt="pattern">
+        </div> -->
+        <div class="container py-5 mt-5">
+            <div class="row align-items-center py-5 mt-5">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h5  style="text-shadow: 5px 5px 5px rgba(1, 1, 3, 3.5); font-style: italic;" class="text-white">QUALITY MOVIE SOLUTIONS - ACTION | ADVENTURE | SCIENCE FICTION</h5>
+                    <h2 class="text-white fw-bold display-2" style="text-shadow: 5px 5px 5px rgba(1, 1, 3, 3.5)">ROOFERS MOVIES</h2>
+                    <h5 class="fw-bold" style=" color: var(--accent-color); text-shadow: 1px 1px 3px rgba(1, 1, 3, 3.5);">By NAUFAL L.HAKIM</h5>
+                    <p style="text-shadow: 5px 5px 5px rgba(1, 1, 3, 3.5)" class="text-white">Unlimited Movie, TVs Shows, & More.</p>
+                    
+                </div>
+                <div class=" col-md-5 offset-md-1">
+                    <form class="hero-form p-5">
+                        <div class="mb-3">
+                            <h3>Daftar Film</h3>
+                            <ul id="film-list">
+                              <!-- Daftar film akan ditampilkan di sini -->
+                            </ul>
+                          </div>
+                          <div class="mb-3">
+                            <h3>Rekomendasi Film</h3>
+                            <p id="rekomendasi">Film yang direkomendasikan akan muncul di sini</p>
+                          </div>
+                          <div class="mb-4">
+                            <h3>Pemesanan Tiket</h3>
+                            <label for="film">Pilih Film:</label>
+                            <select id="film" class="mb-3">
+                              <!-- Opsi film akan ditampilkan di sini -->
+                            </select>
+                            <label for="jumlah-tiket">Jumlah Tiket:</label>
+                            <input type="number" id="jumlah-tiket" min="1" value="1" />
+                           <button type="reset">Cancel</button>
+                          </div>
+
+                        <div class="d-grid">
+                            <button type="submit" id="pesan-tiket" class="btn btn-primary btn-lg">Pesan Tiket</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="py-4" style=" margin-top: 5rem;">
+        <div class="container my-5 py-5 justify-content-center">
+            <h6 class="fw-bold text-bold fs-5 my-3" style="text-align: center; background-color: var(--accent-color); color: #fff; padding: 10px; ">Aplikasi Pemesanan Tiket Bioskop</h6>
+            <div style=" text-align: center;">
+                <form id="ticket-form">
+                    <input type="text" id="movie" placeholder="Nama Film" required />
+                    <input type="number" id="quantity" placeholder="Jumlah Tiket" required />
+                    <input type="number" id="price" placeholder="Harga Tiket" required />
+                    <button type="button" id="add">Tambah Tiket</button>
+                </form>
+            
+                  <table id="ticket-list">
+                    <tr>
+                      <th>Nama Film</th>
+                      <th>Jumlah Tiket</th>
+                      <th>Harga Tiket</th>
+                      <th>Total Harga</th>
+                      <th>Aksi</th>
+                    </tr>
+                    <br>
+                    <h6 id="tanggal_waktu_transaksi"></h6>
+                  </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class=" position-relative  py-5">
+
+        <div class="testimonial-pattern-overlay pattern-left position-absolute">
+            <img src="images/pattern-testimonial.png" alt="pattern">
+        </div>
+        <div class="testimonial-pattern-overlay pattern-right position-absolute">
+            <img src="images/right-pattern-testimonial.png" alt="pattern">
+        </div>
+
+        <div class="container py-5">
+            <h6 class="text-white">Homeowners reviews</h6>
+            <h2 class="text-white fw-bold display-4 mb-4">Our happy customers</h2>
+
+            <div class="swiper testimonial-swiper mb-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/team1.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelios John</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/team2.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Alex Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/team4.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Dominic Toretto</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/commentor-item1.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Ivan Jenner</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-pagination mb-5"></div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="container py-5">
+            <div class="row align-items-center py-5">
+                <div class="col-md-6 ps-md-5">
+                    <img style=" width: 100%;
+                    -webkit-mask-image: url(image/1219303.svg);
+                    -webkit-mask-size: 100%;
+                    -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;" src="image/dev-d2Py_uhXJQo-unsplash.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="col-md-6 px-4 py-5">
+                    <h6 class="">THE BEST FILM</h6>
+                    <h2 class=" fw-bold display-4 mb-3">AVENGER</h2>
+                    <p class="">Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing
+                        massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est
+                        auctor mi quisque nunc non viverra est.
+                        Venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim. Risus
+                        tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverr.
+                    </p>
+                    <a href="about.html" class="btn btn-primary service-btn mt-3">About us</a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+
+        <div class="container-fluid my-5 pt-5 p-0 ">
+            <h6 class="text-center text-white mt-5">MOVIE DETAILS</h6>
+            <h2 class="text-center text-white fw-bold display-4 mb-5">Our latest YEARS</h2>
+            <div class="mb-4">
+                <p class="text-center">
+                    <button class="filter-button px-3 me-2 mb-3 active" data-filter="*">All</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".roof">ACTION</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".install">ADVENTURE</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".solar">SCIENCE FICTION</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".repair">DRAMA</button>
+                </p>
+            </div>
+
+            <div class="isotope-container">
+                <div class="col-md-2 item roof">
+                    <a href="#"><img src="image/jason-leung-T844CLUxqvE-unsplash.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item solar">
+                    <a href="#"><img src="image/king-lip-EJDhX181nR0-unsplash.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item repair">
+                    <a href="#"><img src="image/king-lip-qHK5JJrMGCM-unsplash.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item roof">
+                    <a href="#"><img src="image/yulia-matvienko-kgz9vsP5JCU-unsplash.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item install">
+                    <a href="#"><img src="image/ravi-palwe-EGJhk2GzPMA-unsplash.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item install">
+                    <a href="#"><img src="image/tran-quang-thien-465HdvGQTc4-unsplash.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="process">
+        <div class="container my-5 py-5">
+            <div class="row process-components my-5">
+                <div class="d-flex flex-wrap justify-content-between">
+
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:phone-outline"></iconify-icon>
+                        <h5 class="process-heading">call or Fill form</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:forum"></iconify-icon>
+                        <h5 class="process-heading">Talk with us</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:archive-search-outline"></iconify-icon>
+                        <h5 class="process-heading">Inspect & prososal</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:car-lifted-pickup"></iconify-icon>
+                        <h5 class="process-heading">Prep & installation</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:shield-home-outline"></iconify-icon>
+                        <h5 class="process-heading">job site picked up</h5>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="blog" class="my-5 ">
+        <div class="container py-5">
+            <div class="row align-items-center ">
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <h6 class="">Our Articles</h6>
+                        <h2 class=" fw-bold display-4 mb-3">Latest blogs</h2>
+                        <a href="blog.html" class="btn btn-primary mb-5 mb-md-0">Read Articles</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <a href="#"><img src="images/blog1.jpg" alt="image" class="img-fluid"></a>
+                        <h6 class="my-3">Posted by: Troopers</h6>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="mb-3">How to take care of your roofr</h5>
+                        </a>
+                        <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="blog-single.html" class="btn btn-primary mt-3 mb-5">Read More</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <a href="#"><img src="images/blog2.jpg" alt="image" class="img-fluid"></a>
+                        <h6 class="my-3">Posted by: Troopers</h6>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="mb-3">Best quality roofing company</h5>
+                        </a>
+                        <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="blog-single.html" class="btn btn-primary mt-3 mb-5">Read More</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <a href="#"><img src="images/blog3.jpg" alt="image" class="img-fluid"></a>
+                        <h6 class="my-3">Posted by: Troopers</h6>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="mb-3">For what years roof is stable</h5>
+                        </a>
+                        <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="blog-single.html" class="btn btn-primary mt-3 mb-5">Read More</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="position-relative my-5">
+        <div class="cta-pattern-overlay pattern-left position-absolute top-50 start-0 translate-middle-y">
+            <img src="images/cta-pattern.png" alt="pattern">
+        </div>
+        <div class="container my-5 py-5">
+            <div class="row align-items-center my-5">
+                <div class="col-md-6 offset-md-2">
+                    <h6 class="text-white">Get started now</h6>
+                    <h2 class="text-white fw-bold display-4">Get your roofing done</h2>
+                </div>
+                <div class="col-md-2">
+                    <a href="contact.html" class="btn btn-primary cta-button ">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container footer-container mt-5 pt-3">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+                <div class=" col-md-4 mt-5 mt-md-0 ">
+                    <img src="images/main-logo.png" alt="image" class="my-3">
+                    <p class="">Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae
+                        aliquam vestibulum.</p>
+                    <div class="d-flex align-items-center ">
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon active pe-4"
+                                icon="mdi:facebook"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:twitter"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:instagram"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:linkedin"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:youtube"></iconify-icon></a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="py-3">Our services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof replacement</a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Damage repairs </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof repair</a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof Solar System</a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof coating</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="py-3">Quick links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our locations </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> About us </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our gallery </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Privacy Policy</a></li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Contact us </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5 class="py-3">Contact Info</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item d-flex mb-3">
+                            <iconify-icon class="contact-icon pe-3" icon="ion:location"></iconify-icon>
+                            <a href="#" class="nav-link p-0 "> 163 Elm Drive, NYC, USA </a>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <iconify-icon class="contact-icon pe-3" icon="ion:call"></iconify-icon><a href="#"
+                                class="nav-link p-0 "> (+089) 234-516-6123 </a>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <iconify-icon class="contact-icon pe-3" icon="ion:mail"></iconify-icon><a href="#"
+                                class="nav-link p-0 "> info@yourdomain.com </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+            </footer>
+        </div>
+
+
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p>© 2023 Roofers - All rights reserved</p>
+
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                    <p class="">© 2023 Website By:<a href="https://templatesjungle.com/" class="website-link"
+                            target="_blank"> <b><u>TemplatesJungle</u></b></a> <br> Distributed By: <a href="https://themewagon.com"><b><u>ThemeWagon</b></u></a></p>
+                </div>
+
+            </footer>
+        </div>
+    </section>
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="main.js"></script>  
+    <script src="script.js"></script>
+
+</body>
+
+</html>

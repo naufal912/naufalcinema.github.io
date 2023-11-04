@@ -3,7 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const ticketList = document.getElementById('ticket-list');
   const addButton = document.getElementById('add');
 
-  let tickets = [];
+  const tickets = [
+    { movie: 'Avengers: Endgame', quantity: 2, price: 30000, total: 60000 },
+    { movie: 'Spider-Man: No Way Home', quantity: 3, price: 30000, total: 90000 },
+    { movie: 'The Matrix Resurrections', quantity: 1, price: 30000, total: 30000 },
+  ];
 
   addButton.addEventListener('click', function () {
     const movieInput = document.getElementById('movie');
@@ -96,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tickets.splice(index, 1);
     renderTickets();
   }
+  renderTickets();
 });
 
 function tambahkanTanggalWaktu() {
